@@ -24,9 +24,7 @@ anime-recsys/
 │  ├─ preprocessing.py
 │  ├─ model.py
 │  ├─ recommendation.py
-│  └─ evaluate.py
-├─ weights.h5                   
-├─ anime_model.h5               
+│  └─ evaluate.py            
 ├─ requirements.txt            
 └─ README.md
 ```
@@ -164,3 +162,4 @@ python scripts/model.py --train_csv $OUT/train_df.csv --val_csv $OUT/test_df.csv
 python scripts/recommendation.py --model $OUT/anime_model.h5 --mappings $OUT/mappings.pkl --user 52448 --top_k 10 --out $OUT/recs_user_52448.csv
 python scripts/evaluate.py --model $OUT/anime_model.h5 --test_csv $OUT/test_df.csv --mappings $OUT/mappings.pkl --max_users 2000
 ```
+
