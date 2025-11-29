@@ -1,7 +1,7 @@
-# Anime Recommendation System — Reproducible Instructions
+# Anime Recommendation System
 
 - Project: Anime Recommendation System — Using Collaborative Filtering
-- Author: Debabrata Paul (Roll: 242123009) — Dept. of Mathematics, IIT Guwahati
+- Author: Debabrata Paul
 - Dataset: Anime Recommendation Database 2020 (MyAnimeList)
 
 # Quick summary
@@ -162,4 +162,5 @@ python scripts/model.py --train_csv $OUT/train_df.csv --val_csv $OUT/test_df.csv
 python scripts/recommendation.py --model $OUT/anime_model.h5 --mappings $OUT/mappings.pkl --user 52448 --top_k 10 --out $OUT/recs_user_52448.csv
 python scripts/evaluate.py --model $OUT/anime_model.h5 --test_csv $OUT/test_df.csv --mappings $OUT/mappings.pkl --max_users 2000
 ```
+
 
